@@ -1156,6 +1156,10 @@ figcaption {
   margin-bottom: 100px;
 }
 
+.signature.hidden {
+  display: none;
+}
+
 .div-block-26 {
   display: -webkit-box;
   display: -webkit-flex;
