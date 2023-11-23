@@ -1338,6 +1338,11 @@ figcaption {
     padding-bottom: 80%;
   }
 
+  .vertical-card.padding93mob {
+    padding-top: 91%;
+    padding-bottom: 91%;
+  }
+
   .horizontal-card {
     padding-top: 30%;
     padding-bottom: 30%;
@@ -1548,6 +1553,11 @@ figcaption {
   .big-link {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .vertical-card.padding93mob {
+    padding-top: 93%;
+    padding-bottom: 93%;
   }
 
   .testimonial-text {
