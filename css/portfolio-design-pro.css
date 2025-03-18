@@ -512,10 +512,14 @@ figcaption {
 }
 
 .wrapper.bunker {
-  background-image: url('../images/war-rooms-event-1.png');
+  background-image: url('../images/war-rooms-event-2.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.wrapper.bunker.bottom-margin {
+  margin-bottom: 4rem;
 }
 
 .div-block-4 {
@@ -1110,6 +1114,7 @@ figcaption {
 }
 
 .testimonial-text {
+  text-align: center;
   margin-bottom: 0;
   font-size: 13px;
   line-height: 1.4;
