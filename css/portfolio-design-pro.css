@@ -102,6 +102,10 @@ img {
   display: inline-block;
 }
 
+strong {
+  font-weight: bold;
+}
+
 blockquote {
   border-left: 5px solid #e2e2e2;
   margin-bottom: 10px;
@@ -247,9 +251,9 @@ figcaption {
   width: auto;
   margin-bottom: 30px;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.4;
 }
 
 .paragraph.bolder {
@@ -478,6 +482,8 @@ figcaption {
   justify-content: center;
   padding-left: 5vw;
   padding-right: 5vw;
+  position: relative;
+  overflow: clip;
 }
 
 .wrapper.center.form {
@@ -564,7 +570,7 @@ figcaption {
 }
 
 .wide-background._01 {
-  background-image: url('../images/war-rooms-event-1.png');
+  background-image: url('../images/war-rooms-event-2.jpg');
   background-position: 0 0;
   background-size: cover;
 }
@@ -935,7 +941,7 @@ figcaption {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
   width: 90vw;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -966,6 +972,10 @@ figcaption {
 .proj_body figcaption {
   color: gray;
   margin-bottom: 20px;
+}
+
+.proj_body blockquote {
+  text-align: left;
 }
 
 .next-project {
@@ -1153,9 +1163,9 @@ figcaption {
   margin-top: 5px;
   margin-bottom: 0;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
-  font-size: 8vh;
+  font-size: 6vh;
   font-weight: 400;
-  line-height: 12vh;
+  line-height: 10vh;
   position: relative;
 }
 
@@ -1176,6 +1186,9 @@ figcaption {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .margin-bottom._6rem {
@@ -1195,9 +1208,9 @@ figcaption {
   margin-top: 5px;
   margin-bottom: 0;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: 400;
-  line-height: 5vh;
+  line-height: 3.5vh;
   position: relative;
 }
 
@@ -1220,8 +1233,8 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   overflow: clip;
   box-shadow: 0 0 5px #0003;
@@ -1251,6 +1264,7 @@ figcaption {
 }
 
 .list-image.small {
+  object-fit: fill;
   height: 25vh;
 }
 
@@ -1270,6 +1284,16 @@ figcaption {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.image-9 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (max-width: 991px) {
