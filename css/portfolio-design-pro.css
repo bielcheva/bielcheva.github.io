@@ -297,6 +297,7 @@ figcaption {
 }
 
 .column.about {
+  z-index: 1;
   color: #fff;
   background-color: #000000bf;
   flex: none;
@@ -306,6 +307,7 @@ figcaption {
   min-height: 100vh;
   padding-left: 15vw;
   display: flex;
+  position: relative;
   overflow: visible;
 }
 
@@ -422,6 +424,7 @@ figcaption {
 
 .project-info.head {
   align-items: flex-start;
+  padding-right: 2rem;
   left: 0;
 }
 
@@ -941,7 +944,7 @@ figcaption {
 }
 
 .section-title {
-  text-align: left;
+  text-align: center;
   width: 90vw;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1186,7 +1189,7 @@ figcaption {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 700px;
+  max-width: 828px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1292,6 +1295,18 @@ figcaption {
   height: 100%;
   margin-left: 5vw;
   margin-right: 5vw;
+  position: absolute;
+  inset: 0%;
+}
+
+.image-bg-wrap {
+  position: relative;
+}
+
+.image-bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
   position: absolute;
   inset: 0%;
 }
@@ -1680,7 +1695,7 @@ figcaption {
 
   .project-info.head {
     margin-bottom: 0;
-    padding: 50px 40px;
+    padding: 2rem 1rem;
   }
 
   .wrapper {
