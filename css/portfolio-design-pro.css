@@ -423,8 +423,9 @@ figcaption {
 }
 
 .project-info.head {
+  justify-content: center;
   align-items: flex-start;
-  padding-right: 2rem;
+  padding-right: 0;
   left: 0;
 }
 
@@ -576,6 +577,13 @@ figcaption {
   background-image: url('../images/war-rooms-event-2.jpg');
   background-position: 0 0;
   background-size: cover;
+}
+
+.wide-background._02 {
+  background-image: url('../images/20240418---Voice-Notes---NTU-LOW-90.jpg');
+  background-position: 0 0;
+  background-size: cover;
+  position: relative;
 }
 
 .div-block-10 {
@@ -925,7 +933,7 @@ figcaption {
 
 .number {
   float: none;
-  color: gray;
+  color: var(--white);
   margin-bottom: 0;
   margin-left: 0;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
@@ -979,6 +987,10 @@ figcaption {
 
 .proj_body blockquote {
   text-align: left;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
 }
 
 .next-project {
@@ -1000,7 +1012,8 @@ figcaption {
 }
 
 .project-description {
-  color: #7a7a7a;
+  color: #d4d4d4;
+  text-align: left;
   font-size: 18px;
 }
 
@@ -1311,6 +1324,51 @@ figcaption {
   inset: 0%;
 }
 
+._2-col-grid {
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  grid-template-rows: auto;
+}
+
+.project-link-wrap {
+  color: var(--white);
+  position: relative;
+  overflow: clip;
+}
+
+.project-link-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-content {
+  background-image: linear-gradient(225deg, #fff0 16%, #000000c4 53%);
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  position: absolute;
+  inset: 0%;
+}
+
+.photo-credit {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  inset: auto 0% -8%;
+}
+
+.photo-credit.grid {
+  bottom: -22%;
+}
+
 @media screen and (max-width: 991px) {
   a {
     margin-bottom: 20px;
@@ -1481,6 +1539,10 @@ figcaption {
   .main-h3.bold.home {
     line-height: 15vh;
   }
+
+  ._2-col-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1563,9 +1625,17 @@ figcaption {
     padding-bottom: 0;
   }
 
+  .number {
+    font-size: 63px;
+  }
+
   .big-link {
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .project-title {
+    font-size: 37px;
   }
 
   .vertical-card {
@@ -1607,7 +1677,13 @@ figcaption {
   }
 
   .flex-block {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     flex-flow: column;
+  }
+
+  .photo-credit.grid {
+    bottom: -55px;
   }
 }
 
@@ -1721,7 +1797,7 @@ figcaption {
     margin-bottom: 5vh;
   }
 
-  .wide-background._01 {
+  .wide-background._01, .wide-background._02 {
     aspect-ratio: 3 / 2;
     background-position: 50%;
     height: auto;
@@ -1806,9 +1882,17 @@ figcaption {
     padding-right: 0;
   }
 
+  .number {
+    font-size: 55px;
+  }
+
   .big-link {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .project-title {
+    font-size: 32px;
   }
 
   .vertical-card.padding93mob {
@@ -1882,6 +1966,19 @@ figcaption {
   .list-image.small {
     height: auto;
     min-height: auto;
+  }
+
+  .project-link-wrap {
+    min-height: 400px;
+  }
+
+  .project-link-image {
+    overflow: clip;
+  }
+
+  .overlay-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
