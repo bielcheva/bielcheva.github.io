@@ -1980,6 +1980,10 @@ figcaption {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .photo-credit {
+    bottom: -24%;
+  }
 }
 
 #w-node-_3663856c-5aa1-ff24-f838-aed960151049-2a642400 {
