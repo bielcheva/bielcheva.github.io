@@ -269,6 +269,10 @@ figcaption {
   line-height: 70px;
 }
 
+.paragraph.pc {
+  font-size: 14px;
+}
+
 .column {
   border: 1px #000;
   flex: 1;
@@ -979,10 +983,14 @@ figcaption {
   display: block;
 }
 
+.proj_body img {
+  max-width: 700px;
+}
+
 .proj_body figure {
   clear: none;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 700px;
+  margin: 8rem auto;
   display: inline-block;
 }
 
@@ -1286,7 +1294,7 @@ figcaption {
 }
 
 .list-image.small {
-  object-fit: fill;
+  object-fit: cover;
   height: 25vh;
 }
 
@@ -1372,7 +1380,7 @@ figcaption {
 }
 
 .photo-credit.grid {
-  bottom: -22%;
+  bottom: -37%;
 }
 
 @media screen and (max-width: 991px) {
